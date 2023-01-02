@@ -1,0 +1,168 @@
+body {
+    width: 100%; height: 834px;
+    min-height: 834px; /*设置高度最低限度，注意它只是设置最低限度，height也需要设置*/
+    margin: 0px;
+}
+.top {
+    /*大小属性*/
+    width: 100%; height: 100px;
+    /*背景属性*/
+    background-image: url("./../img/headbg.png");
+    background-size: 100%;
+    background-position: center;
+}
+.center {
+    /*大小属性*/
+    width: 100%; height: 100%;
+    margin-top: 30px;
+}
+.sideBarDetector {
+    /*位置属性*/
+    float: left;
+    /*大小属性*/
+    width: 3%; height: 100%;
+    border-radius: 0% 10px 10px 0%;
+    /*背景属性*/
+    background-color: azure;
+}
+.main {
+    /*位置属性*/
+    float: left;
+    /*大小属性*/
+    width: 95%; height: 100%;
+    margin-left: 2%;
+    border-radius: 10px 0% 0% 10px;
+    /*背景属性*/
+    background: linear-gradient(rgba(255, 255, 255, 0), rgb(180, 180, 180) 10%); /*实现背景颜色渐变*/
+    background-image: url("./../img/contentbg.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 50% 70%;
+}
+.content-box {
+    /*位置属性*/
+    position: relative;
+    /*大小属性*/
+    width: 80%; height: 97%;
+    margin-top: 1%; margin-bottom: 1%; margin-left: 8%; margin-right: 5%;
+    border-radius: 15px;
+    /*背景属性*/
+    background-color: bisque;
+    opacity: 0.925; /*设置透明度*/
+}
+.content {
+    /*大小属性*/
+    width: 96%; height: 96%;
+    padding: 2%;
+}
+.content hr {
+    /*大小属性*/
+    width: 100%; height: 0.125px;
+    /*背景属性*/
+    border-width: 0.125px;
+    border-color: black;
+    background-color: black;
+}
+.content-title {
+    /*位置属性*/
+    display: flex;
+    /*大小属性*/
+    width: 100%; height: 6%;
+}
+.content-title-icon {
+    /*位置属性*/
+    display: flex;
+    float: left;
+    /*大小属性*/
+    width: 4%; height: 100%;
+    margin-right: 1%;
+}
+.content-title-icon svg {
+    width: 40px; height: 40px;
+}
+.content-title-name {
+    /*位置属性*/
+    display: flex;
+    float: left;
+    /*大小属性*/
+    width: 95%; height: 100%;
+    /*文字属性*/
+    font-family: sans-serif;
+}
+.content-title-name span {
+    /*位置属性*/
+    display: block;
+    justify-content: center;
+    /*大小属性*/
+    height: 100%;
+    /*文字属性*/
+    font-size: 30px;
+    font-weight: 550; /*加粗字体*/
+}
+.content-introduce {
+    /*大小属性*/
+    width: 100%; height: 5%;
+}
+.content-main {
+    /*大小属性*/
+    width: 100%; height: 85%;
+}
+.content-notice {
+    /*位置属性*/
+    float: left;
+    /*大小属性*/
+    width: 30%; height: 100%;
+}
+.content-mainPart {
+    /*位置属性*/
+    float: left;
+    /*大小属性*/
+    width: 70%; height: 100%;
+}
+.sideBar {
+    /*位置属性*/
+    position: fixed; top: 0%; left: 0%; /*使用fixed让边栏永远适应屏幕大小*/
+    /*大小属性*/
+    width: 0%; height: 100%;
+    /*文字属性*/
+    white-space: nowrap; /*折叠时字体不换行*/
+    /*背景属性*/
+    background-color: black;
+    /*其他属性*/
+    list-style: none;
+    overflow-x: hidden; /*隐藏溢出部分*/
+    transition: 0.5s;
+}
+.sideBar ul {
+    /*大小属性*/
+    width: 100%; height: 10%;
+    margin: 0px; padding: 0px;
+}
+.sideBar li {
+    /*大小属性*/
+    width: 100%; height: 100%;
+}
+.sideBar a {
+    /*位置属性*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*大小属性*/
+    width: 99%; height: 100%;
+    /*文字属性*/
+    font-size: 25px;
+    font-weight: 800;
+    text-align: center;
+    color: rgb(180, 180, 180);
+    text-decoration: none; /*去除链接下划线*/
+    /*背景属性*/
+    border-left: solid 2px black;
+    /*其他属性*/
+    transition: 0.5s; /*高亮动画*/
+}
+.sideBar a:hover {
+    /*背景属性*/
+    border-left: solid 2px white;
+    /*文字属性*/
+    color: white;
+}
