@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8" />
+        <title>小驿站</title>
+        <link rel="icon" href="./img/webIcon.ico" type="image/x-icon"> <!-- 为网页加入icon图标 -->
+        <link rel="stylesheet" type="text/css" href="./css/video.css"> <!-- 引入css -->
+    </head>
+    <body>
+        <div class="mainWrap">
+            <div class="top"></div>
+            <div class="center">
+                <div class="sideBarDetector" onmouseover="openSideBar()"></div>
+                <div class="main">
+                    <div class="content-box">
+                        <div class="content">
+                            <div class="content-title">
+                                <div class="content-title-icon">
+                                    <svg t="1672627205805" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2810" width="200" height="200"><path d="M512 42.666667c259.2 0 469.333333 210.133333 469.333333 469.333333 0 172.864-93.461333 323.904-232.618666 405.333333H906.666667a32 32 0 0 1 0 64H512C252.8 981.333333 42.666667 771.2 42.666667 512S252.8 42.666667 512 42.666667z m0 64C288.149333 106.666667 106.666667 288.149333 106.666667 512s181.482667 405.333333 405.333333 405.333333 405.333333-181.482667 405.333333-405.333333S735.850667 106.666667 512 106.666667z m-85.76 213.333333c7.808 0 15.488 2.090667 22.144 6.058667v-0.021334l256.853333 152.533334c19.861333 11.797333 26.048 36.864 13.802667 56-3.498667 5.504-8.32 10.112-14.058667 13.44l-256.853333 150.058666c-19.946667 11.669333-45.930667 5.525333-58.026667-13.696a39.594667 39.594667 0 0 1-6.101333-21.12V360.704c0-22.485333 18.901333-40.704 42.24-40.704z" fill="#131415" p-id="2811"></path></svg>
+                                </div>
+                                <div class="content-title-name">
+                                    <span>影视</span>
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="content-viewPicture"></div>
+                            <div class="content-text">
+                                <ul>
+                                    <li>
+                                        <a href="https://www.wandou.pro/" target="_blank">📌豌豆PRO</a>
+                                        <span>| 影视导航站</span>
+                                    </li>
+                                    <li>
+                                        <a href="https://dmdy4.vip/" target="_blank">📌大米星球</a>
+                                        <span>| 齐全的影视网站</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="sideBar" class="sideBar" onmouseleave="closeSideBar()">
+                <ul>
+                    <li><a href="./index.html">主页</a></li>
+                    <li><a href="./video.html">影视</a></li>
+                    <li><a href="./game.html">游戏</a></li>
+                </ul>
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript">
+        function openSideBar(){
+            document.getElementById("sideBar").style.width = "15%";
+            document.getElementById("sideBar").style.boxShadow = "0px 1px 10px 5px #c4c9ce"; //boxShadow用于添加边框阴影
+        }
+        function closeSideBar(){
+            document.getElementById("sideBar").style.width = "0%";
+            document.getElementById("sideBar").style.boxShadow = "0px 0px 0px 0px #c4c9ce";
+        }
+    </script>
+</html>

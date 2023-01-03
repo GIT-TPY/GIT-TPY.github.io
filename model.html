@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8" />
+        <title>小驿站</title>
+        <link rel="icon" href="./img/webIcon.ico" type="image/x-icon"> <!-- 改 -->
+        <link rel="stylesheet" type="text/css" href="./css/model.css"> <!-- 改 -->
+    </head>
+    <body>
+        <div class="mainWrap">
+            <div class="top"></div>
+            <div class="center">
+                <div class="sideBarDetector" onmouseover="openSideBar()"></div>
+                <div class="main">
+                    <div class="content-box">
+                        <div class="content">
+                            <div class="content-title">
+                                <div class="content-title-icon">
+                                    <svg>svg</svg> <!-- 改 -->
+                                </div>
+                                <div class="content-title-name">
+                                    <span>title-name</span> <!-- 改 -->
+                                </div>
+                            </div>
+                            <hr />
+                            <p>content</p> <!-- 改 -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="sideBar" class="sideBar" onmouseleave="closeSideBar()">
+                <ul>
+                    <li><a href="./index.html">主页</a></li>
+                    <li><a href="./video.html">影视</a></li>
+                    <li><a href="./game.html">游戏</a></li>
+                </ul>
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript">
+        function openSideBar(){
+            document.getElementById("sideBar").style.width = "15%";
+            document.getElementById("sideBar").style.boxShadow = "0px 1px 10px 5px #c4c9ce"; //boxShadow用于添加边框阴影
+        }
+        function closeSideBar(){
+            document.getElementById("sideBar").style.width = "0%";
+            document.getElementById("sideBar").style.boxShadow = "0px 0px 0px 0px #c4c9ce";
+        }
+    </script>
+</html>
