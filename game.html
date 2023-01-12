@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8" />
+        <title>小驿站</title>
+        <link rel="icon" href="./img/webIcon.ico" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="./css/main.css">
+        <link rel="stylesheet" type="text/css" href="./css/top.css">
+        <link rel="stylesheet" type="text/css" href="./css/content_game.css"> <!-- content_game.css 在此引入 -->
+        <link rel="stylesheet" type="text/css" href="./css/sideBar.css">
+        <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="main-frame">
+            <div id="top" class="top-frame"></div> 
+            <div id="center" class="center-frame"></div>
+            <div id="sideBar" class="sideBar" onmouseleave="closeSideBar()"></div>
+        </div>
+    </body>
+    <script>
+        $(function() {
+            $("#top").load("./module/top.html");
+            $("#center").load("./module/content_game.html"); // content_game.html 在此引入
+            $("#sideBar").load("./module/sidebar.html");
+        })
+    </script>
+</html>
