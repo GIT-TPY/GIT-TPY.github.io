@@ -10,7 +10,7 @@
     width: 100%;
     margin-bottom: 10px;
     /* 背景属性 */
-    background: url("../img/bg_top.png");
+    background: url("/img/bg_top.png");
     background-size: 100%;
     background-position: center;
 }
