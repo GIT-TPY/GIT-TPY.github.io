@@ -27,7 +27,7 @@
     margin-left: 30px; margin-right: 30px;
     /* 背景属性 */
     border-radius: 30px;
-    background: linear-gradient(rgba(255, 255, 255, 0), rgb(255, 255, 255) 80%), url("/img/bg_content.png") 50% 80% no-repeat; /*实现背景颜色渐变，url一定要放在background内，注意linear和url间的逗号*/
+    background: linear-gradient(rgba(255, 255, 255, 0), rgb(255, 255, 255) 80%), url("/img/bg_content.png") 50% 85% no-repeat; /*实现背景颜色渐变，url一定要放在background内，注意linear和url间的逗号*/
     box-shadow: 0px 0px 15px 5px rgba(42, 42, 42, 0.3);
 }
 .contentTop {
