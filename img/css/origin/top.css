@@ -1,0 +1,16 @@
+.top-frame {
+    /* 位置属性 */
+    display: flex;
+    /* 大小属性 */
+    min-height: 100px;
+    box-sizing: border-box;
+}
+.top-content {
+    /* 大小属性 */
+    width: 100%;
+    margin-bottom: 10px;
+    /* 背景属性 */
+    background: url("../img/bg_top.png");
+    background-size: 100%;
+    background-position: center;
+}

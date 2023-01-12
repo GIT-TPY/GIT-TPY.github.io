@@ -1,0 +1,47 @@
+.sideBar {
+    /*位置属性*/
+    position: fixed; top: 0%; left: 0%; /*使用fixed让边栏永远适应屏幕大小*/
+    /*大小属性*/
+    width: 0%; height: 100%;
+    /*文字属性*/
+    white-space: nowrap; /*折叠时字体不换行*/
+    /*背景属性*/
+    background-color: black;
+    /*其他属性*/
+    list-style: none;
+    overflow-x: hidden; /*隐藏溢出部分*/
+    transition: 0.5s;
+}
+.sideBar ul {
+    /*大小属性*/
+    width: 100%; height: 10%;
+    margin: 0px; padding: 0px;
+}
+.sideBar li {
+    /*大小属性*/
+    width: 100%; height: 100%;
+}
+.sideBar a {
+    /*位置属性*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*大小属性*/
+    width: 99%; height: 100%;
+    /*文字属性*/
+    font-size: 25px;
+    font-weight: 800;
+    text-align: center;
+    color: rgb(180, 180, 180);
+    text-decoration: none; /*去除链接下划线*/
+    /*背景属性*/
+    border-left: solid 2px black;
+    /*其他属性*/
+    transition: 0.5s; /*高亮动画*/
+}
+.sideBar a:hover {
+    /*背景属性*/
+    border-left: solid 2px white;
+    /*文字属性*/
+    color: white;
+}
