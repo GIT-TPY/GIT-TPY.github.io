@@ -1,4 +1,4 @@
-/* be linked to index.html */
+/* be linked to audio.html */
 .center-frame {
     /* 位置属性 */
     flex-grow: 1;
@@ -104,22 +104,22 @@
     /* 背景属性 */
     background-color: #fbf2db;
 }
-.content-reserve {
+.content-viewPic {
     /* 大小属性 */
     box-sizing: border-box;
-    width: 25%; 
+    width: 35%; 
     min-width: 240px; min-height: 100%;
-    padding: 10px;
     /* 背景属性 */
     border-radius: 10px;
-    background-color: rgb(59, 37, 157);
+    background: url("/img/audio\ viewPicture.png") no-repeat;
+    background-size: cover;
 }
 .content-TextBox {
     /* 位置属性 */
     flex-grow: 1;
     /* 大小属性 */
     box-sizing: border-box;
-    width: 75%;
+    width: 65%;
     padding-left: 30px;
 }
 .content-TextBox h2 {
@@ -134,13 +134,29 @@
     border-color: black;
     background-color: black;
 }
-.content-TextBox p {
-    /* 位置属性 */
-    flex-wrap: wrap;
-    /* 大小属性 */
+.content-TextBox ul {
+    /*位置属性*/
+    display: flex;
+    flex-direction: column;
+    /*大小属性*/
+    width: 100%; height: 100%;
+    margin: 0%; padding: 0%;
+    /*其他属性*/
+    list-style: none;
+}
+.content-TextBox li {
+    /*位置属性*/
+    align-items: center;    
+    /*大小属性*/
     width: 100%;
-    /* 文本属性 */
-    word-wrap:break-word;
+    margin: 3px;
+    /*背景属性*/
+    border-radius: 5px;
+    background-color: rgb(0, 195, 255);
+}
+.content-TextBox a {
+    /* 文字属性 */
+    text-decoration: none; /* 去除下划线 */
 }
 .content-mc_marginRight {
     /* 大小属性 */

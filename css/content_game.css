@@ -111,7 +111,8 @@
     min-width: 240px; min-height: 100%;
     /* 背景属性 */
     border-radius: 10px;
-    background: url("/img/game\ viewPicture.png") center;
+    background: url("/img/game\ viewPicture.png") center no-repeat;
+    background-size: cover;
 }
 .content-TextBox {
     /* 位置属性 */

@@ -112,6 +112,7 @@
     /* 背景属性 */
     border-radius: 10px;
     background: url("/img/video\ viewPicture.png") center no-repeat;
+    background-size: cover;
 }
 .content-TextBox {
     /* 位置属性 */
